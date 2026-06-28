@@ -39,8 +39,64 @@
 
 //=============================================================================
 
-fn main() {
-    let greeting = String::from("Hello World");
-    println!("{}", greeting);
 
+
+// fn main() {
+//     let greeting = String::from("Hello World");
+//     println!("{}", greeting);
+
+//     let char1 = greeting.chars().nth(110);
+
+//     println!("char1: {}", char1.unwrap());
+
+// }
+
+// //=============================================================================
+
+// fn main() {
+//     let is_even = true;
+
+//     if is_even {
+//         println!("This is a even number");
+//     } else {
+//         println!("This is a odd number");
+//     }
+// }
+
+//=============================================================================
+
+// fn main() {
+
+//     for i in 0..100 {
+//         println!("{} ", i);
+//     }
+// }
+
+//=============================================================================
+
+
+fn main() {
+
+    // arrays, maps, strings
+    let sentence = String::from("my name is harkirat");
+    let first_word = get_first_word(sentence);
+
+    let n = 1000;
+    for i in 0..n {
+        println!("Hello, world! ()", i);
+    }
+    
+    print!("First word is: {}", first_word);
+
+}
+
+fn get_first_word(sentence: String) -> String {
+    let mut ans: String = String::from("");
+    for char in sentence.chars() {
+        ans.push_str(char.to_string().as_str());
+        if char == ' ' {
+            break;
+        }
+    }
+    return ans;
 }
