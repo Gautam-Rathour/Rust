@@ -109,6 +109,10 @@
 fn main() {
 
     // arrays, maps, strings
+    println!("Hello, world!");
+    let sentence = String::from("my name is harkirat");
+
+    // println!(sentence);
     
     
 }
